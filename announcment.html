@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Announcements</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tabs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tablink {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tablink:hover {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent h2 {
+    margin-top: 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Announcements</h1>
+    <div class="tabs">
+        <button class="tablink" onclick="openTab('latest')">Latest Announcements</button>
+        <button class="tablink" onclick="openTab('upcoming')">Upcoming Events</button>
+    </div>
+    <div id="latest" class="tabcontent">
+        <h2>Latest Announcements</h2>
+        <ul id="latestAnnouncements">
+            
+        </ul>
+    </div>
+    <div id="upcoming" class="tabcontent">
+        <h2>Upcoming Events</h2>
+        <ul id="upcomingEvents">
+            
+        </ul>
+    </div>
+</div>
+
+<script>
+function openTab(tabName) {
+    var i;
+    var tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+}
+var latestAnnouncements = [
+    "36 Hours National Leval Hackathon Problem statements_on 1ST & 2ND MARCH,2024",
+    "CMR HACKFEST 1.0-2024 Registration_36 Hours National Leval Hackathon & Project Expo",
+    "ONE WEEK FACULTY DEVELOPMENT PROGRAMME ON EMERGING TRENDS IN MACHINE LEARNING AND DEEP LEARNING-26th JUNE TO 1st JULY 2023."
+];
+
+var upcomingEvents = [
+    "WEBWARS2.O -March 3th",
+    "AZURE -APRIL 20th",
+    "HACKFEST-April 29th"
+];
+
+function updateData() {
+    document.getElementById("latestAnnouncements").innerHTML = "";
+    document.getElementById("upcomingEvents").innerHTML = "";
+
+    latestAnnouncements.forEach(function(announcement) {
+        var li = document.createElement("li");
+        li.textContent = announcement;
+        document.getElementById("latestAnnouncements").appendChild(li);
+    });
+
+    upcomingEvents.forEach(function(event) {
+        var li = document.createElement("li");
+        li.textContent = event;
+        document.getElementById("upcomingEvents").appendChild(li);
+    });
+}
+
+setInterval(updateData, 5000);
+updateData();
+</script>
+</body>
+</html>

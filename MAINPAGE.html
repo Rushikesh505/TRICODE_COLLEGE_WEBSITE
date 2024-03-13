@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMR COLLEGE OF ENGINEERING AND TECHNOLOGY</title>
+    <style>
+        body {
+            background-color: #FBEAEB;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #FBEAEB;
+        }
+
+        h1, h2 {
+            color: #0e0e0e;
+        }
+
+        header {
+            text-align: center;
+            background-color: #2F3C7E;
+            padding: 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        nav {
+            background-color: #0a0000;
+            color: #0a0a0a;
+            text-align: center;
+            padding: 10px;
+            animation: slideInDown 1s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FBEAEB;
+            font-size: 18px;
+        }
+
+        .login-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-decoration: none;
+            color: #070707;
+            font-size: 18px;
+            animation: fadeInUp 1s ease;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        .course-container {
+            margin-top: 20px;
+            text-align: center;
+            animation: slideInUp 1s ease;
+        }
+
+        .course-container img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .course-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .course-container h1 {
+            color: #0f0f0f;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> CMR COLLEGE OF ENGINEERING</h1>
+        <hR>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="CLUBS.HTML">Clubs</a></li>
+            <li><a href="eventcalender.html">Events</a></li>
+            <li><a href="announcment.html">Announcement</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>DEPARTMENTS</h1>
+        <HR>
+        <HR>
+
+        <div class="course-container">
+            <a href="https://en.wikipedia.org/wiki/Artificial_Intelligence_Markup_Language">
+                <img src=".vscode/aiml.jpg" alt="cmrcet" height="200"
+                    width="200">
+            </a>
+            <h1>Artificial Intelligence and Machine Learning</h1>
+        </div>
+
+        <div class="course-container">
+            <a href="https://en.wikipedia.org/wiki/Information_technology">
+                <img src=".vscode/cad.jpg" alt="cmrcet" height="200"
+                    width="200">
+            </a>
+            <h1>Information Technology</h1>
+        </div>
+
+        <div class="course-container">
+            <a href="https://en.wikipedia.org/wiki/Cyber_Security_and_Information_Systems_Information_Analysis_Center">
+                <img src=".vscode/cyber.jpg" alt="cmrcet" height="200"
+                    width="200">
+            </a>
+            <h1>Cyber Security</h1>
+        </div>
+
+        <div class="course-container">
+            <a href="https://en.wikipedia.org/wiki/Data_science">
+                <img src=".vscode/ds.jpg" alt="cmrcet" height="200"
+                    width="200">
+            </a>
+            <h1>Data Science</h1>
+        </div>
+
+        <div class="course-container">
+            <a href="https://en.wikipedia.org/wiki/Research">
+                <img src=".vscode/research.jpg" alt="cmrcet" height="200"
+                    width="200">
+            </a>
+            <h1>Research</h1>
+        </div>
+    </main>
+
+    <div class="footer">
+        <p>© 2024 All rights reserved to Team tricode.</p>
+    </div>
+
+</body>
+
+</html>
